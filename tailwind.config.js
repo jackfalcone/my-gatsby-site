@@ -5,7 +5,13 @@ module.exports = {
     "./src/components/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        pacifico: ["Pacifico", "serif"],
+        radioCanadaBig: ["Radio Canada Big", "sans-serif"],
+        rubik: ["Rubik", "sans-serif"]
+      }
+    },
   },
   plugins: [],
 }

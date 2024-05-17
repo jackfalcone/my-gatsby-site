@@ -1,23 +1,53 @@
-// Step 1: Import React
 import * as React from 'react'
 import Layout from '../components/layout'
-import { StaticImage } from 'gatsby-plugin-image'
+import { StaticImage } from "gatsby-plugin-image"
+import cookingVideo from '../assets/2620043-uhd_3840_2160_25fps.mp4'
+import ImageCarousel from '../components/imageCarousel'
 
-// Step 2: Define your component
 const IndexPage = () => {
   return (
-    <Layout pageTitle="Home Page">
-      <p>This is my Gatsby Tutorial</p>
-      <StaticImage 
-        alt="A psychedelic Astronaut"
-        src="../images/psy_astronaut.png"
-      />
+    <Layout pageTitle="Startseite">
+      <video loop autoPlay className="mt-8 z-10">
+        <source src={cookingVideo} type="video/mp4" />
+      </video>
+      <article className="mt-10 mb-14 font-rubik leading-8 text-lg">
+        <p className="my-3">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          <br />
+          Aenean placerat iaculis arcu in rutrum. Nam eu elit enim. Ut nulla odio, lobortis condimentum est in, rhoncus hendrerit urna. 
+        </p>
+        <p className="my-3">
+          Curabitur dapibus tellus vel risus dignissim, ac fermentum mi ultrices. 
+          <br />
+          Donec porttitor, tortor et dignissim lacinia, ligula ipsum sollicitudin diam, sit amet fermentum quam arcu vestibulum dolor. Etiam vel consectetur est. Duis nec nisi vitae velit pretium accumsan. Aliquam condimentum, nisi in vehicula molestie, quam turpis aliquet lacus, vel ornare ligula massa in mi. 
+        </p>
+        <p className="my-3">
+          Aenean erat nunc, aliquam in ligula a, suscipit ullamcorper dolor. Praesent vitae nisl leo. Vivamus at felis turpis. Donec quis diam mollis, fringilla lacus non, aliquet massa. Proin fringilla feugiat gravida. Vestibulum enim nisi, gravida at risus nec, semper auctor massa.
+        </p>
+      </article>
+      <div className="relative overflow-hidden">
+        <StaticImage
+          className="object-cover w-full h-full"
+          alt="Thailand and Switzerland"
+          src="../images/thai_swiss.jpg"
+        />
+        <p className="absolute w-full py-2.5 bottom-0 inset-x-0 bg-yellow-500 text-white text-xl text-center leading-4 font-rubik">Wo feurige Thai Küche auf Schweizer Gastfreundschaft trifft</p>
+      </div>
+      <article className="mt-10 mb-14 font-rubik leading-8 text-lg">
+        <p className="my-3">
+          Curabitur dapibus tellus vel risus dignissim, ac fermentum mi ultrices. 
+          <br />
+          Donec porttitor, tortor et dignissim lacinia, ligula ipsum sollicitudin diam, sit amet fermentum quam arcu vestibulum dolor. 
+        </p>
+        <p className="my-3">
+        Etiam vel consectetur est. Duis nec nisi vitae velit pretium accumsan. Aliquam condimentum, nisi in vehicula molestie, quam turpis aliquet lacus, vel ornare ligula massa in mi.
+        </p>
+      </article>
+      <ImageCarousel />
     </Layout>
   )
 }
 
-// You'll learn about this in the next task, just copy it for now
-export const Head = () => <title>Home Page</title>
+export const Head = () => <title>Gasthof Rosegg</title>
 
-// Step 3: Export your component
 export default IndexPage
