@@ -31,7 +31,7 @@ const IndexPage = () => {
           alt="Thailand and Switzerland"
           src="../images/thai_swiss.jpg"
         />
-        <p className="absolute w-full py-2.5 bottom-0 inset-x-0 bg-yellow-500 text-white text-xl text-center leading-4 font-rubik">Wo feurige Thai Küche auf Schweizer Gastfreundschaft trifft</p>
+        <p className="absolute w-full py-2.5 bottom-0 inset-x-0 bg-yellow-500 text-white text-lg lg:text-xl text-center leading-5 font-rubik">Wo feurige Thai Küche auf Schweizer Gastfreundschaft trifft</p>
       </div>
       <article className="mt-10 mb-14 font-rubik leading-8 text-lg">
         <p className="my-3">

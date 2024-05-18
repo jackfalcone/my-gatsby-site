@@ -7,7 +7,7 @@ import Footer from './footer'
 const Layout = ({ children }) => {
 
     return (
-        <div className="m-auto mx-auto font-san mb-12" id="outer-container">
+        <div className="m-auto mx-auto font-san mb-12 max-w-[90%]" id="outer-container">
             <Menu right>
                 <ul className="flex list-none pl-0">
                     <li className="pr-2 font-pacifico text-4xl mb-8"><Link to="/">Home</Link></li>
@@ -19,7 +19,7 @@ const Layout = ({ children }) => {
                 </ul>
             </Menu>
             <main className="max-w-2xl mx-auto mb-12">
-                <h1 className="pt-6 text-6xl text-yellow-500 font-pacifico">
+                <h1 className="pt-6 text-4xl md:text-6xl text-yellow-500 font-pacifico">
                     Gasthof Rosegg
                 </h1>
                 <div className="mt-12">
